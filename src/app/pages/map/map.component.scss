@@ -1,0 +1,36 @@
+div.container {
+  height: calc(100vh - 64px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-200);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+
+    h1 {
+      color: var(--secondary-dark);
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+
+  .map-container {
+    flex: 1;
+    display: flex;
+
+    #map {
+      flex: 1;
+    }
+  }
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+  background-color: pink !important;
+}

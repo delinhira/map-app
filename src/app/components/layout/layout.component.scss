@@ -1,0 +1,25 @@
+mat-sidenav-container {
+  height: calc(100vh - 64px);
+}
+
+mat-nav-list {
+  display: flex;
+  flex-direction: column;
+
+  > a {
+    border-radius: 0;
+    padding: 0 0.75rem;
+  }
+}
+
+mat-sidenav-content {
+  background-color: #fcfcfc;
+  opacity: 1;
+  background-image: linear-gradient(135deg, #e9e2e2 25%, transparent 25%),
+    linear-gradient(225deg, #e9e2e2 25%, transparent 25%),
+    linear-gradient(45deg, #e9e2e2 25%, transparent 25%),
+    linear-gradient(315deg, #e9e2e2 25%, #fcfcfc 25%);
+  background-position: 4px 0, 4px 0, 0 0, 0 0;
+  background-size: 4px 4px;
+  background-repeat: repeat;
+}

@@ -1,0 +1,44 @@
+<div class="container">
+  <section id="intro">
+    <div class="intro-overlay">
+      <h1>{{ sections["intro"].title }}</h1>
+      <p>
+        {{ sections["intro"].subtitle }}
+      </p>
+    </div>
+  </section>
+
+  <section id="missions">
+    <mat-card appearance="outlined">
+      <mat-card-header>
+        <h2 matCardTitle>{{ sections["mission"].title }}</h2>
+        <p matCardSubtitle>{{ sections["mission"].subtitle }}</p>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="mission" *ngFor="let mission of missions">
+          <img src="{{ mission.imageUrl }}" />
+          <p>{{ mission.text }}</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </section>
+
+  <section id="offers">
+    <mat-card appearance="outlined" *ngFor="let offer of offers; let i = index">
+      <mat-card-content [ngClass]="i % 2 === 0 ? 'even' : 'odd'">
+        <div class="image">
+          <img src="{{ offer.imageUrl }}" />
+        </div>
+
+        <div class="text">
+          <p class="title">{{ offer.title }}</p>
+          <p>{{ offer.text }}</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </section>
+
+  <section id="footer">
+    <p>&copy; delinhira 2024</p>
+  </section>
+</div>
