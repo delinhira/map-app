@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+@use "@angular/material" as mat;
+
+@include mat.core();
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+
+  --white: #fcfcfc;
+  --white-100: rgb(252, 252, 252, 0.1);
+  --white-800: rgb(252, 252, 252, 0.8);
+  --white-900: rgb(252, 252, 252, 0.9);
+
+  --primary-vivid: #b7ff78;
+  --primary: #7bc738;
+  --primary-500: rgb(208, 236, 197, 0.5);
+
+  --secondary-dark: #443030;
+  --secondary: rgb(175, 159, 159);
+
+  --secondary-200: rgba(222, 215, 215, 0.2);
+  --secondary-700: rgba(222, 215, 215, 0.7);
+
+  --tertiary: #e69122;
+
+  --semi-bold: 600;
+  --bold: 800;
+}
+
+p {
+  color: var(--secondary-dark);
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
